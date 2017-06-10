@@ -7,7 +7,7 @@ output: md_document
 ```{r, Echo = TRUE}
 library(knitr)
 base.dir <- "/Users/Lobna/Documents"
-fig.path <- "Documents/figure/"
+fig.path <- "/Users/Lobna/Documents/figure/"
 opts_knit$set(base.dir = base.dir)
 opts_chunk$set(fig.path = fig.path) 
 ```
