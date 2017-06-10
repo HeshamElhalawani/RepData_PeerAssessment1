@@ -1,7 +1,7 @@
     library(knitr)
     base.dir <- "/Users/Lobna/Documents"
     fig.path <- "/Users/Lobna/Documents/figure/"
-    opts_knit$set(base.dir = base.dir)
+    opts_knit$set(base.dir = base.dir, self.contained=FALSE)
     opts_chunk$set(fig.path = fig.path) 
 
 Loading and preprocessing data
