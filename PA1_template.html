@@ -123,6 +123,11 @@ $(document).ready(function () {
 </div>
 
 
+<pre class="r"><code>library(knitr)
+base.dir &lt;- &quot;/Users/Lobna/Documents&quot;
+fig.path &lt;- &quot;Documents/figure/&quot;
+opts_knit$set(base.dir = base.dir)
+opts_chunk$set(fig.path = fig.path) </code></pre>
 <div id="loading-and-preprocessing-data" class="section level1">
 <h1>Loading and preprocessing data</h1>
 <pre class="r"><code>if(!file.exists('activity.csv')){
