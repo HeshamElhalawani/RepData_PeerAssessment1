@@ -2,8 +2,8 @@ Setting knitr options
 =====================
 
     library(knitr)
-    base.dir <- "/Users/Lobna/Documents"
-    fig.path <- "/Users/Lobna/Documents/figure/"
+    base.dir <- "/Documents"
+    fig.path <- "/Documents/figure/"
     opts_knit$set(base.dir = base.dir, self.contained=FALSE)
     knitr::opts_chunk$set(cache = TRUE, echo = TRUE, message = FALSE, 
                           warning = FALSE, fig.path = fig.path, base.dir = base.dir) 
@@ -44,7 +44,7 @@ Calculating/Plotting Average daily activity pattern
     ggplot(data=averages, aes(x=interval, y=steps)) + geom_line() + xlab("5-minute interval") +
         ylab("average number of steps taken")
 
-![](/Users/Lobna/Documents/figure/unnamed-chunk-3-1.png)
+![](/figure/unnamed-chunk-3-1.png)
 
 2. Maximum number of steps
 --------------------------
@@ -93,7 +93,7 @@ Imputing missing values
     total.steps <- tapply(filled.activityData$steps, filled.activityData$date, FUN=sum)
     hist(total.steps, xlab="total number of steps taken each day")
 
-![](/Users/Lobna/Documents/figure/unnamed-chunk-8-1.png)
+![](/figure/unnamed-chunk-8-1.png)
 
 ### b. Calculating and reporting mean and median
 
@@ -132,4 +132,4 @@ Estimating the differences in activity patterns between weekdays and weekends
     ggplot(averages, aes(interval, steps)) + geom_line() + facet_grid(day ~ .) +
         xlab("5-minute interval") + ylab("Number of steps")
 
-![](/Users/Lobna/Documents/figure/unnamed-chunk-11-1.png)
+![](/figure/unnamed-chunk-11-1.png)
