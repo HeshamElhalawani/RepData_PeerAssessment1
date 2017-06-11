@@ -4,12 +4,17 @@ author: "Hesham Elhalawani"
 date: "June 9, 2017"
 output: html_document
 ---
-```{r, Echo = TRUE}
+
+# Setting knitr options
+
+```{r setup, echo = TRUE}
+
 library(knitr)
 base.dir <- "/Users/Lobna/Documents"
 fig.path <- "/Users/Lobna/Documents/figure/"
 opts_knit$set(base.dir = base.dir, self.contained=FALSE)
-opts_chunk$set(fig.path = fig.path) 
+knitr::opts_chunk$set(cache = TRUE, echo = TRUE, message = FALSE, 
+                      warning = FALSE, fig.path = fig.path, base.dir = base.dir) 
 ```
 
 #Loading and preprocessing data

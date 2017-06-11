@@ -123,11 +123,15 @@ $(document).ready(function () {
 </div>
 
 
+<div id="setting-knitr-options" class="section level1">
+<h1>Setting knitr options</h1>
 <pre class="r"><code>library(knitr)
 base.dir &lt;- &quot;/Users/Lobna/Documents&quot;
 fig.path &lt;- &quot;/Users/Lobna/Documents/figure/&quot;
 opts_knit$set(base.dir = base.dir, self.contained=FALSE)
-opts_chunk$set(fig.path = fig.path) </code></pre>
+knitr::opts_chunk$set(cache = TRUE, echo = TRUE, message = FALSE, 
+                      warning = FALSE, fig.path = fig.path, base.dir = base.dir) </code></pre>
+</div>
 <div id="loading-and-preprocessing-data" class="section level1">
 <h1>Loading and preprocessing data</h1>
 <pre class="r"><code>if(!file.exists('activity.csv')){
