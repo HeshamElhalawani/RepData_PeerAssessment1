@@ -2,8 +2,8 @@ Setting knitr options
 =====================
 
     library(knitr)
-    base.dir <- "/Documents"
-    fig.path <- "/Documents/figure/"
+    base.dir <- "/"
+    fig.path <- "/figure/"
     opts_knit$set(base.dir = base.dir, self.contained=FALSE)
     knitr::opts_chunk$set(cache = TRUE, echo = TRUE, message = FALSE, 
                           warning = FALSE, fig.path = fig.path, base.dir = base.dir) 
